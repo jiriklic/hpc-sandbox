@@ -16,8 +16,28 @@
       "type": "runtime"
     },
     {
+      "name": "boto3",
+      "version": "^1.24.17",
+      "type": "runtime"
+    },
+    {
+      "name": "docker-compose",
+      "version": "^1.29.2",
+      "type": "runtime"
+    },
+    {
+      "name": "pandas",
+      "version": "^1.4.3",
+      "type": "runtime"
+    },
+    {
       "name": "python",
       "version": "^3.8",
+      "type": "runtime"
+    },
+    {
+      "name": "requests",
+      "version": "^2.28.0",
       "type": "runtime"
     }
   ],

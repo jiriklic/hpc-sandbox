@@ -7,14 +7,18 @@ from projen import TomlFile, DependencyType, JsonFile
 aws_pcluster_experiment: PythonProject = PythonProject(
     author_email="web@jiriklic.com",
     author_name="Jiri Klic",
-    module_name="aws_pcluster_experiment",
+    module_name="pcluster_utils",
     name="aws-pcluster-experiment",
     description="HPC experiment running on AWS ParallelCluster",
     license="MIT",
-    version="0.1.0",
+    version="0.2.0",
     deps=[
         "python@^3.8",
-        "aws-parallelcluster@^3.1.4"
+        "aws-parallelcluster@^3.1.4",
+        "boto3@^1.24.17",
+        "docker-compose@^1.29.2",
+        "pandas@^1.4.3",
+        "requests@^2.28.0"
     ],
     dev_deps=[
         "jupyterlab@^3.4.3",

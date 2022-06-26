@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "aws-pcluster-experiment"
-version = "0.1.0"
+version = "0.2.0"
 description = "HPC experiment running on AWS ParallelCluster"
 license = "MIT"
 authors = [ "Jiri Klic <web@jiriklic.com>" ]
@@ -14,7 +14,11 @@ readme = "README.md"
 
   [tool.poetry.dependencies]
   aws-parallelcluster = "^3.1.4"
+  boto3 = "^1.24.17"
+  docker-compose = "^1.29.2"
+  pandas = "^1.4.3"
   python = "^3.8"
+  requests = "^2.28.0"
 
   [tool.poetry.dev-dependencies]
   jupyterlab = "^3.4.3"
